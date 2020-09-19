@@ -15,3 +15,7 @@ The app should be running on `localhost:3000`
 Run `npm run lint` & `npm test` separately.
 
 Or run `npm run validate`
+
+---
+
+Deployed to [Heroku](http://drop-down-kukiron.herokuapp.com/).
