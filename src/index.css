@@ -7,7 +7,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.drop-down {
+  margin-top: 30px;
+}
+
+.drop-down__title {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.drop-down__item:hover {
+  color: white !important;
+  background-color: #0275d8 !important; /* bootstrap primary color */
+  border-radius: 5px;
+}
+
+i {
+  color: gray;
 }
