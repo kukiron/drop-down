@@ -15,8 +15,8 @@ const App: React.FunctionComponent = () => {
 
   return (
     <div className="app">
-      <h1>AUTHORY</h1>
-      <h2>Select an item from drop-down</h2>
+      <h1>Visibility of Articles</h1>
+      <h2>Select an option from drop-down menu</h2>
       <hr />
       <div className="drop-down">
         <Dropdown isOpen={listOpen} toggle={(): void => setListOpen(!listOpen)}>
