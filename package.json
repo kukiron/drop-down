@@ -28,7 +28,7 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src --fix",
-    "test": "react-scripts test --env=jsdom --coverage --colors",
+    "test": "react-scripts test --env=jsdom --runInBand --coverage --watchAll=false --colors",
     "validate": "npm run lint && npm test"
   },
   "eslintConfig": {
@@ -58,6 +58,14 @@
     "coveragePathIgnorePatterns": [
       "<rootDir>/src/index.tsx",
       "<rootDir>/src/serviceWorker.ts"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 90,
+        "branches": 90,
+        "functions": 90,
+        "statements": 90
+      }
+    }
   }
 }

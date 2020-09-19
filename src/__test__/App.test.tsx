@@ -31,7 +31,7 @@ describe('App', () => {
   });
 
   it('should render drop-down options when toggle button is clicked', () => {
-    dropDown?.props?.().toggle?.(sampleEvent);
+    dropDown.props().toggle?.(sampleEvent);
     const dropDownMenu = wrapper.find(DropdownMenu);
     const dropDownItems = wrapper.find(DropdownItem);
 
@@ -43,7 +43,7 @@ describe('App', () => {
   it('should select the correct option when clicked', () => {
     const firstItem = wrapper.find(DropdownItem).at(0);
 
-    firstItem?.props?.().onClick?.(sampleEvent);
+    firstItem.props().onClick?.(sampleEvent);
     const selectedOption = wrapper.find('.drop-down__title').props().children;
     expect(selectedOption).toBe(listData[0].name);
   });
